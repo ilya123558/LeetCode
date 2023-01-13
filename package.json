@@ -1,0 +1,20 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000L\u0000e\u0000e\u0000t\u0000C\u0000o\u0000d\u0000e\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilya123558/LeetCode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilya123558/LeetCode/issues"
+  },
+  "homepage": "https://github.com/ilya123558/LeetCode#readme"
+}
