@@ -1,11 +1,10 @@
-var averageValue = function (nums) {
-    const newNumsArray = nums.filter(elem => (elem % 3 === 0) && (elem % 2 === 0)) || []
-    const sum = newNumsArray.reduce((a, b) => a + b, 0)
-    if (newNumsArray.length !== 0) {
-        return Math.floor(sum / newNumsArray.length)
-    }
+let runningSum = function (nums) {
+    const newNums = [nums[0]]
+    nums.reduce((prevValue, value) => {
+        newNums.push(prevValue + value)
+        return prevValue + value
+    })
 
-    return 0
+    return newNums
 };
-
-console.log(averageValue([1,3,6,10,12,15]))
+console.log(runningSum([1,2,3,4]))
