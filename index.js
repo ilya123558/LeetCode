@@ -1,8 +1,11 @@
-function LeetCode() {
-    console.log(
-        'В этом репозитории собраны мои работы в LeetCode \n' +
-        'Навигация по работам это ветки'
-    )
+function twoSum(nums, target) {
+    for (let index = 0; index < nums.length; index++) {
+        for (let nextIndex = index + 1; nextIndex < nums.length; nextIndex++) {
+            if (nums[index] + nums[nextIndex] === target) {
+                return [index, nextIndex]
+            }
+        }
+    }
 }
 
-LeetCode()
+console.log(twoSum([2,7,11,15], 9))
