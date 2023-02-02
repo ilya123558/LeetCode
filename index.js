@@ -1,12 +1,11 @@
-var buildArray = function(nums) {
-
-    const ans = []
-
-    for (let i = 0; i < nums.length; i++) {
-        ans.push(nums[nums[i]])
+var averageValue = function (nums) {
+    const newNumsArray = nums.filter(elem => (elem % 3 === 0) && (elem % 2 === 0)) || []
+    const sum = newNumsArray.reduce((a, b) => a + b, 0)
+    if (newNumsArray.length !== 0) {
+        return Math.floor(sum / newNumsArray.length)
     }
 
-    return ans
+    return 0
 };
 
-console.log(buildArray([5,0,1,2,3,4]))
+console.log(averageValue([1,3,6,10,12,15]))
